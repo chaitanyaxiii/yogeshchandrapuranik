@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Publications</title>
+    <link rel="stylesheet" href="research.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="color-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-container" style="margin-left: 220px;">
+        <!-- Aside Start -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span> YP </span></a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="./index.html" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="./index.html"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="./index.html"><i class="fa fa-list"></i>Paper Published</a></li>
+                <li><a href="./index.html"><i class="fa fa-briefcase"></i>Academics</a></li>
+                <li><a href="./index.html"><i class="fa fa-comments"></i>Activities</a></li>
+                <li><a href="./index.html"><i class="fa fa-comments"></i>Achievements</a></li>
+                <li><a href="notes.html"><i class="fa fa-sticky-note-o"></i>Notes</a></li>
+                <li><a href="research.html"><i class="fa fa-sticky-note-o"></i>Research Paper</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="research-header">
+                <h1>Research Publications</h1>
+                <a href="login.html"><button id="switchToAdminBtn" class="switch-admin-btn">Switch to Admin
+                        Mode</button></a>
+            </div>
+
+            <div class="search-section">
+                <input type="text" id="searchPublications" class="search-bar" placeholder="Search publications...">
+
+                <div class="filter-options">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="journal">Journal Publications</option>
+                        <option value="conference">Conference Papers</option>
+                        <option value="workshop">Workshop Papers</option>
+                        <option value="patent">Patents</option>
+                    </select>
+
+                    <select id="sortOptions">
+                        <option value="year-desc">Newest First</option>
+                        <option value="year-asc">Oldest First</option>
+                        <option value="title-asc">Title A-Z</option>
+                        <option value="title-desc">Title Z-A</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="publicationsList" class="publications-list">
+                <!-- Publications will be dynamically populated here -->
+            </div>
+        </div>
+        <script src="main.js"></script>
+        <script src="research.js"></script>
+    </div>
+</body>
+
+</html>

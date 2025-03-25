@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Yogeshchandra Puranik</title>
+
+  <!-- Css Files -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="color-1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<style>
+  .aside {
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0; /* Ensure it stays open */
+    top: 0;
+    padding: 30px;
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    transition: none; /* Remove transition to prevent sliding */
+}
+
+/* Remove the .open class dependency */
+.aside.open {
+    left: 0;
+}
+
+/* Prevent overlay from affecting layout */
+.overlay {
+    display: none !important;
+}
+
+/* Logo Styles */
+.aside .logo {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.aside .logo a {
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    letter-spacing: 5px;
+    position: relative;
+    display: inline-block;
+}
+
+.aside .logo a span {
+    font-family: 'Clicker Script', cursive;
+    font-size: 40px;
+}
+
+.aside .logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
+
+</style>
+
+<body>
+  <!-- Main Container Start -->
+  <div class="main-container">
+    <!-- Aside Start -->
+    <div class="aside">
+      <div class="logo">
+        <a href="#"><span> YP </span></a>
+      </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#about section"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="#paper"><i class="fa fa-list"></i>Paper Published</a></li>
+        <li><a href="#academics"><i class="fa fa-briefcase"></i>Academics</a></li>
+        <li><a href="#activities"><i class="fa fa-comments"></i>Activities</a></li>
+        <li><a href="#achievments"><i class="fa fa-comments"></i>Achievements</a></li>
+        <li><a href="notes.html"><i class="bi bi-journal-text"></i> Notes</a></li>
+        <li><a href="research.html"><i class="bi bi-file-earmark-text"></i> Research Paper</a></li>
+
+      </ul>
+    </div>
+    <!-- Aside End -->
+
+    <!-- Main Content Start -->
+    <div class="main-content">
+      <section id="home" class="home section" style="margin-left: 150px;">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">Hello, my name is <span class="name">Prof. Yogeshchandra Puranik</span></h3>
+              <h3 class="my-profession"><span class="typing">Assistant Professor, Modern College of Engg </span></h3>
+              <p> Currently working at MCA Dept , MODERN COLLEGE OF ENGINEERING, SHIVAJINAGAR,
+                PUNE-05 as Assistant Professor</p>
+              <a href="./CV.docx" class="btn hire-me" download="CV">Career Chronicle</a>
+            </div>
+            <div class="home-img padd-15">
+              <img src="https://moderncoe.edu.in/images/Mca/facultyProfile/MR.-YOGESHCHANDRA-L.PURANIK.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home section End -->
+      <!--About section Start -->
+      <section id="about section" class="about section" style="margin-left: 160px;">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>Professional Experience: <span>More than 22 Years</span></h3>
+                  <p>
+                  <ul>
+                    <li>• Worked as a Technical consultant in OracleApps 11i E-Business Suite.</li>
+                    <li>• Experienced in AR (Accounts Receivable), AP (Accounts Payable), and GL (General Ledger)
+                      modules.</li>
+                    <li>• Proficient in Oracle 8, Oracle Forms 6i, Oracle Reports 6i, Toad, Workflow, and data
+                      migration.</li>
+                    <!-- <li>• Served as a LIC (Local Enquiry Committee) member for S.P. Pune University, overseeing infrastructure inspections
+                          <span>and approvals for engineering and management colleges.</span></li> -->
+                    <li>• Obtained UGC Approval for the Post of lecturer in MCA Course under the faculty of Management
+                      at S.P. Pune
+                      University.</li>
+                    <li>• External Senior Supervisor for MCA and Engineering Exams at S.P. Pune University.</li>
+                    <li>• Guided over 125 students for MCA internship projects in various software companies.</li>
+                    <li>• Participated in numerous state and National level seminars, workshops, STTPs, and FDPs.</li>
+                    <li>• Organized State and National level Seminars, workshops, and FDPs.</li>
+                    <li>• Participated in Faculty Development Programmes at L&T InfoTech Mumbai and Infosys.</li>
+                    <li>• Worked as a paper setter, Moderator, and Chairman for Various Subjects of MCA Course at
+                      S.P.Pune University.</li>
+                    <li>• ARC center Coordinator of DTE for MCA and Engineering Course.</li>
+                    <li>• In charge of MCA Admissions committee, Time Table, student activities, and professional
+                      society chapters.</li>
+                    <li>• Completed training in AWS (Amazon Web Services) Educator program.</li>
+                  </ul>
+
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Experience:<span>22 years</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Phone:<span>+91 9404608646</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>City:<span>Pune,Maharashtra</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Age:<span>46</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Paper Published : <span>19</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>DOB:<span>05/01/1978</span></p>
+                    </div>
+                    <!-- <div class="info-item padd-15">
+                      <p>Degree:<span> Completed </span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Paper Presented:<span>19+</span></p>
+                    </div> -->
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a href="./CV.docx" class="btn" download="CV YLP">Download CV</a>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <section id="resume" class="resume" style="margin-left: 50px;">
+                <div class="container">
+
+                  <div class="section-title">
+                    <h2></h2>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-6" data-aos="fade-up">
+                      <h3 class="resume-title">Summary</h3>
+                      <div class="resume-item pb-0">
+                        <h4>MR. YOGESHCHANDRA L.PURANIK </h4>
+                        <p><em> Assistant Professor Masters of Compuer Applications, PES’s
+                            Modern College of Engineering, Pune</em></p>
+                        <ul>
+                          <li>1186/A, Off J.M. Road, Shivajinagar, Pune, Maharashtra Pin- 411005.</li>
+                          <li>(020) 25533638, 25533648.</li>
+                          <li>yogeshchandra.puranik@gmail.com</li>
+                        </ul>
+                      </div>
+
+
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                      <h3 class="resume-title">Professional Experience</h3>
+                      <div class="resume-item">
+                        <h4>Presently working as Assistant Professor at MCA Dept , MODERN COLLEGE OF ENGINEERING,
+                          SHIVAJINAGAR,
+                          PUNE-05, from July 2007 </h4>
+                        <h5>2007 - Present</h5>
+                        <p><em>PES’s Modern College of Engineering, Pune</em></p>
+                        <ul>
+
+                        </ul>
+                      </div>
+                      <div class="resume-item">
+                        <h4>Worked as an OracleApps Technical Consultant in Cova InfoTech Bangalore</h4>
+                        <h5>2006-2007.</h5>
+
+                        <ul>
+
+                        </ul>
+                      </div>
+                      <div class="resume-item">
+                        <h4>Worked as Lecturer in the Dept. of Computer Science, Saraswati Bhuvan Science College,
+                          Aurangabad for
+                          M.Sc.(Comp.Sci), B.Sc. (Comp.Sci.) & B.C.S.</h4>
+                        <h5>2001-2006</h5>
+
+                        <ul>
+
+                        </ul>
+                      </div>
+                      <!-- <div class="resume-item">
+                        <h4>Proficient in Oracle 8, Oracle Forms 6i, Oracle Reports 6i, Toad, Workflow, and data migration.</h4>
+                        <h5>2010-2016</h5>
+
+                        <ul>
+
+                        </ul>
+                      </div> -->
+
+                    </div>
+                  </div>
+
+                </div>
+              </section><!-- End Resume Section -->
+              <section id="paper" <div class="professional-info">
+                <h2>Papers Published</h2>
+                <ul>
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “A Review on Salesforce”, Published in
+                    International Journal of Trending Scientific Researchand Development(IJTSRD),
+                    Vol-2|Issue-4(May-June2018).With Impact Factor 4.101 for the year of 2018 by I2OR
+                  </li style="overflow: hidden;">
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “Study of Cloud Computing Services”, Published
+                    in International Journal of Innovative Research in Computer and Communication Engineering(IJIRCCE),
+                    Vol-9|Issue-5 (May 2021)</li>
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “Graph databases and Graph Data Science in
+                    New4j”,
+                    Published in International Journal of Trending Scientific Research and Development(IJTSRD),
+                    Vol-5|Issue-4(May-June 2021).With Impact Factor 6.410 for the year of 2021 by I2OR</li>
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “Introduction to Reinforcement learning”,
+                    Published in International Journal of Trending Scientific Research and Development(IJTSRD),
+                    Vol-5|Issue-4(May-June 2021).With Impact Factor 6.410 for the year of 2021 by I2OR</li>
+
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “Agile Methodologies”,
+                    Published in International Journal of Trending Scientific Research and Development(IJTSRD),
+                    Vol-5|Issue-4(May-June 2021).With Impact Factor 6.410 for the year of 2021 by I2OR</li>
+
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “Higher Education prediction by using machine
+                    learning”,
+                    Published in International Journal of Advanced Computational Science and Engineering
+                    Technology(IJACSET),
+                    Vol-3|Issue-1 (31 January 2021).</li>
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “Web Real-Time Communication Based on Web
+                    Socket”,
+                    Published in IJIRCCE, Volume 9, Issue 5, May 2021</li>
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “Review on React JS”,Published in International
+                    Journal of Trending Scientific Research and Development(IJTSRD),
+                    Vol-2|Issue-4(May-June2018).With ImpactFactor4.101 for the year of 2018 by I2OR</li>
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “Fun with Flutter”,Published in International
+                    Journal of
+                    Trending Scientific Research and Development(IJTSRD),
+                    Vol-2|Issue-4(May-June2018).With ImpactFactor4.101 for the year of 2018 by I2OR</li>
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “An Extensive Review on Generative Adversarial
+                    Networks (GAN's)”,Published in International Journal of
+                    Trending Scientific Research and Development(IJTSRD),
+                    Vol-2|Issue-4(May-June2018).With ImpactFactor4.101 for the year of 2018 by I2OR</li>
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “An Introduction to Cluster Computing”,Published
+                    in International Journal of
+                    Trending Scientific Research and Development(IJTSRD),
+                    Vol-2|Issue-4(May-June2018).With ImpactFactor4.101 for the year of 2018 by I2OR</li>
+
+                  <li style="overflow: hidden;">• Yogeshchandra Puranik “The Future of Connected Vehicles”, Published in
+                    IJIRCCE, Volume
+                    9, Issue 3, March 2021.</li>
+                  <!-- Add this within your HTML where you want to display educational qualifications -->
+
+                  <!-- <div class="education">
+
+                    <div class="education-item">
+                      <h5>Diploma In OA&FA At C-DAC</h5>
+
+                    </div>
+                    <div class="education-item">
+                      <h5>Diploma In IT Cert.</h5>
+
+                    </div>
+                  </div>
+
+                  <div class="certification">
+                    <div class="certification-item">
+                      <h5>VB 6.0 / Oracle 8i Cert. At SSI</h5>
+
+                    </div>
+                    <div class="certification-item">
+                      <h5>JAVA Programming</h5>
+
+                    </div>
+                  </div> -->
+
+                </ul>
+
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+
+  </section>
+
+  <!------------------------------------------------------------------------------------Education-->
+
+
+  <section id="academics" class="academics" style="margin-left: 200px;">
+    <h2 style="margin-bottom: 30px;">Academics</h2>
+    <div class="resume-item">
+      <h4>Ph. D.[Social Media Cyber Crimes]</h4>
+      <h5>Pursuing</h5>
+      <p>My Ph.D. research topic is Designing and implementing a framework to detect and predict cyber crimes on Social
+        media
+        using Machine Learning.</p>
+    </div>
+    </div>
+    <div class="academics-box" style="width:1000px;">
+      <div class="resume-item">
+        <h4>MCA[Engineering & Technology]</h4>
+        <h5>Government Engineering College, Aurangabad</h5>
+        <p>Master of Computer Applications (MCA) is a postgraduate degree program that focuses on developing skills and
+          knowledge in computer science and its applications.</p>
+      </div>
+    </div>
+    <div class="academics-box" style="width: 1000px;">
+      <div class="resume-item">
+        <h4>L.L.B [International cyber crimes]</h4>
+        <h5>Dr. B. A. M. University, Aurangabad</h5>
+        <p>L.L.B in International cyber crimes graduate from Dr. B. A, M. University,
+          Aurangabad, with a First Class, showcasing a strong academic foundation in advanced topics related
+          to International cyber crimes.</p>
+      </div>
+    </div>
+    <div class="academics-box" style="width: 1000px;">
+      <div class="resume-item">
+        <h4>B.Sc.[Stats, Maths, Comp.Sci.]</h4>
+        <h5>Dr. B. A. M. University, Aurangabad</h5>
+        <p> B.Sc. is a undergraduate degree program that focuses on developing skills and
+          knowledge in science,Math, Computer Science and its applications. </p>
+      </div>
+    </div> 
+    <!----------------------------------edu end-->
+
+  </section>
+  <section id="activities" <div class="professional-info" style="padding-left: 280px;">
+    <h2 style="margin-right: 100px;">Activities</h2>
+    <ul>
+      <li style="overflow: hidden;">• MCA Admissions Incharge</li>
+      <li style="overflow: hidden;">• MCA Facilitation Center Co-ordinator</li>
+      <li style="overflow: hidden;">• S4DS Professional Society Chapter Co-ordinatior</li>
+      <li style="overflow: hidden;">• Induction/Farewell Programme Co-Ordinator</li>
+      <li style="overflow: hidden;">• NAAC Criteria-I Incharge</li>
+      <li style="overflow: hidden;">• NBA - Criteria-II Incharge</li>
+      <li style="overflow: hidden;">• Visitor PES Society Sir Sassom David Boys Hostel</li>
+      <!-- <li style="overflow: hidden;">• </li> -->
+      <li style="overflow: hidden;">• Project, Seminars & Research Paper Guidance to MCA Students</li>
+      <li style="overflow: hidden;">• Cultural Co-ordinator of MCA Dept.</li>
+      <li style="overflow: hidden;">• MCA Timetable Incharge.</li>
+      <li style="overflow: hidden;">• Lab Incharge, Data Science Lab.</li>
+      <li style="overflow: hidden;">• UPS Maintenance Incharge.</li>
+      <!-- Add this within your HTML where you want to display educational qualifications -->
+
+      <!-- <div class="education">
+  
+                      <div class="education-item">
+                        <h5>Diploma In OA&FA At C-DAC</h5>
+  
+                      </div>
+                      <div class="education-item">
+                        <h5>Diploma In IT Cert.</h5>
+  
+                      </div>
+                    </div>
+  
+                    <div class="certification">
+                      <div class="certification-item">
+                        <h5>VB 6.0 / Oracle 8i Cert. At SSI</h5>
+  
+                      </div>
+                      <div class="certification-item">
+                        <h5>JAVA Programming</h5>
+  
+                      </div>
+                    </div> -->
+
+    </ul>
+
+    </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+  </section>
+  <section id="achievments" style="padding-left: 270px;">
+    <div class="professional-info">
+      <h2 style="margin-right: 100px;">Achievements</h2>
+      <ul>
+        <li style="overflow: hidden;">• Pursuing Ph.D from SPPU.</li>
+        <li style="overflow: hidden;">• A++ grade in Ph.D CourseWork at SPPU</li>
+        <li style="overflow: hidden;">• More than 19 Papers Published in International Journals</li>
+        <li style="overflow: hidden;">• Paper Setting & Checking in SPPU from last 16 years</li>
+        <li style="overflow: hidden;">• S4DS Professional Society Chapter Co-ordinator</li>
+        <li style="overflow: hidden;">• Attended Various Workshops</li>
+
+        <li style="overflow: hidden;">• Member of LIC Committee SPPU</li>
+        <li style="overflow: hidden;">• External Senior Supervisor at various Engineering/Management Exams of SPPU</li>
+        <!-- Add this within your HTML where you want to display educational qualifications -->
+
+        <!-- <div class="education">
+      
+                          <div class="education-item">
+                            <h5>Diploma In OA&FA At C-DAC</h5>
+      
+                          </div>
+                          <div class="education-item">
+                            <h5>Diploma In IT Cert.</h5>
+      
+                          </div>
+                        </div>
+      
+                        <div class="certification">
+                          <div class="certification-item">
+                            <h5>VB 6.0 / Oracle 8i Cert. At SSI</h5>
+      
+                          </div>
+                          <div class="certification-item">
+                            <h5>JAVA Programming</h5>
+      
+                          </div>
+                        </div> -->
+
+      </ul>
+
+    </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+  </section>
+  </div>
+
+
+  <!--About section End -->
+
+  <!---Paper Published-->
+
+
+
+  </div>
+  <!-- Main Container End -->
+
+  <!-- JS Files -->
+  <script src="main.js"></script>
+
+</body>
+
+</html>
