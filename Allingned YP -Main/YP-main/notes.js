@@ -3,7 +3,7 @@ let notes = [
         id: 1,
         title: "Decoding-Cybercrime-Unit I",
         category: "lectures",
-        filename: "notes/Decoding-Cybercrime-Unit I.pptx",
+        filename: "Notes/Decoding-Cybercrime-Unit I.pptx",
         uploadDate: "2025-03-10",
         fileSize: "3.1 MB"
     },
@@ -11,7 +11,7 @@ let notes = [
         id: 2,
         title: "Cryptography-and-Cybercrime Unit II",
         category: "lectures",
-        filename: "notes/Cryptography-and-Cybercrime Unit II.pptx",
+        filename: "Notes/Cryptography-and-Cybercrime Unit II.pptx",
         uploadDate: "2025-03-01",
         fileSize: "2.4 MB"
     },
@@ -19,7 +19,7 @@ let notes = [
         id: 3,
         title: "UNIT 1 Formatted Notes Cyber Security",
         category: "lectures",
-        filename: "notes/UNIT 1 Formatted Notes Cyber Security.docx",
+        filename: "Notes/UNIT 1 Formatted Notes Cyber Security.docx",
         uploadDate: "2025-03-15",
         fileSize: "1.2 MB"
     },
