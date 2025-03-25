@@ -2,6 +2,7 @@ function login() {
     const username = document.getElementById("username").value.trim();
     const password = document.getElementById("password").value.trim();
     const message = document.getElementById("message");
+    const selectionContainer = document.getElementById("selectionContainer");
 
     // Prevent empty login attempt
     if (!username || !password) {
@@ -15,19 +16,24 @@ function login() {
         // Store login state
         localStorage.setItem('isAdminLoggedIn', 'true');
 
-        // Success message
+        // Show selection options
+        selectionContainer.style.display = "block";
         message.style.color = "green";
-        message.textContent = "Login Successful! Redirecting...";
+        message.textContent = "Login Successful! Please select a section.";
 
-        setTimeout(() => {
-            // Redirect user based on stored page
-            const redirectPage = sessionStorage.getItem('redirectPage');
-            sessionStorage.removeItem('redirectPage'); // Clear redirect storage
-            window.location.href = redirectPage ? redirectPage : "upload_notes.html";
-        }, 1000);
     } else {
         message.style.color = "red";
         message.textContent = "Invalid Username or Password!";
+    }
+}
+
+// Handle selection and redirect
+function handleSelection() {
+    const selectedOption = document.getElementById("sectionSelect").value;
+    if (selectedOption === "research") {
+        window.location.href = "research-admin.html";
+    } else {
+        window.location.href = "upload_notes.html";
     }
 }
 

@@ -37,7 +37,7 @@
             }
         }
 
-        input {
+        input, select {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -63,6 +63,11 @@
             margin-top: 10px;
             font-weight: bold;
         }
+
+        #selectionContainer {
+            display: none;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -73,6 +78,16 @@
         <input type="password" id="password" placeholder="Password">
         <button onclick="login()">Login</button>
         <p class="message" id="message"></p>
+
+        <!-- Selection container shown after successful login -->
+        <div id="selectionContainer">
+            <h3>Select Section:</h3>
+            <select id="sectionSelect">
+                <option value="notes">Notes Section</option>
+                <option value="research">Research Paper</option>
+            </select>
+            <button onclick="handleSelection()">Continue</button>
+        </div>
     </div>
 
     <script src="login.js"></script>
